@@ -1,0 +1,155 @@
+.promotions {
+  margin-bottom: 40px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.view-all-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.view-all-link:hover {
+  color: #4CAF50;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+/* Large Desktop (1600px+) - 5 колонок */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1800px;
+    padding: 0 40px;
+  }
+  
+  .section-header h2 {
+    font-size: 42px;
+    margin-bottom: 32px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+  }
+}
+
+/* Desktop (1200px - 1599px) - 4 колонки */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .container {
+    max-width: 1400px;
+    padding: 0 30px;
+  }
+  
+  .section-header h2 {
+    font-size: 38px;
+    margin-bottom: 28px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+  }
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Tablet (768px - 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .section-header h2 {
+    font-size: 28px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+/* Mobile (до 767px) */
+@media (max-width: 767px) {
+  .promotions {
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .section-header {
+    margin-bottom: 20px;
+  }
+  
+  .section-header h2 {
+    font-size: 24px;
+  }
+  
+  .view-all-link {
+    font-size: 14px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+}
+
+/* Small Mobile (до 480px) */
+@media (max-width: 480px) {
+  .promotions {
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .section-header h2 {
+    font-size: 20px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+  }
+}

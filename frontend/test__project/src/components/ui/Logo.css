@@ -1,0 +1,25 @@
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2E7D32;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 18px;
+  }
+}

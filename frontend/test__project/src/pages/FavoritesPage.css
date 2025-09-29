@@ -1,0 +1,47 @@
+.favorites-page {
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.favorites-page h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.favorites-content {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .favorites-page {
+    padding: 20px 0;
+  }
+  
+  .container {
+    padding: 0 12px;
+  }
+  
+  .favorites-page h1 {
+    font-size: 24px;
+  }
+  
+  .favorites-content {
+    padding: 20px;
+  }
+}
